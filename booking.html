@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Session | TopHills Music Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-white font-sans">
+
+  <!-- NAVBAR -->
+  <header class="bg-black/80 backdrop-blur-md fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">TopHills</h1>
+      <nav class="hidden md:flex space-x-6 text-sm">
+        <a href="index.html" class="hover:text-gray-400">Home</a>
+        <a href="about.html" class="hover:text-gray-400">About</a>
+        <a href="services.html" class="hover:text-gray-400">Services</a>
+        <a href="portfolio.html" class="hover:text-gray-400">Portfolio</a>
+        <a href="booking.html" class="text-white font-semibold">Booking</a>
+        <a href="contact.html" class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-300 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="h-[50vh] flex items-center justify-center text-center bg-gray-900">
+    <div>
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-4">
+        Book a Studio Session
+      </h2>
+      <p class="text-gray-400">
+        Let’s bring your vision to life.
+      </p>
+    </div>
+  </section>
+
+  <!-- BOOKING FORM -->
+  <section class="py-20 px-6">
+    <div class="max-w-3xl mx-auto bg-gray-900 p-10 rounded-2xl shadow-xl">
+
+      <form name="booking" method="POST" data-netlify="true" class="space-y-6">
+        <input type="hidden" name="form-name" value="booking" />
+
+        <!-- Full Name -->
+        <div>
+          <label class="block mb-2 text-sm">Full Name</label>
+          <input type="text" name="fullname" required
+            class="w-full p-3 rounded-lg bg-black border border-gray-700 focus:outline-none focus:border-white">
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label class="block mb-2 text-sm">Email Address</label>
+          <input type="email" name="email" required
+            class="w-full p-3 rounded-lg bg-black border border-gray-700 focus:outline-none focus:border-white">
+        </div>
+
+        <!-- Phone -->
+        <div>
+          <label class="block mb-2 text-sm">Phone Number</label>
+          <input type="tel" name="phone"
+            class="w-full p-3 rounded-lg bg-black border border-gray-700 focus:outline-none focus:border-white">
+        </div>
+
+        <!-- Service Selection -->
+        <div>
+          <label class="block mb-2 text-sm">Service Needed</label>
+          <select name="service" required
+            class="w-full p-3 rounded-lg bg-black border border-gray-700 focus:outline-none focus:border-white">
+            <option value="">Select a service</option>
+            <option>Studio Recording</option>
+            <option>Mixing & Mastering</option>
+            <option>Full Music Production</option>
+            <option>Artist Development</option>
+            <option>Digital Marketing</option>
+          </select>
+        </div>
+
+        <!-- Budget -->
+        <div>
+          <label class="block mb-2 text-sm">Budget Range</label>
+          <select name="budget"
+            class="w-full p-3 rounded-lg bg-black border border-gray-700 focus:outline-none focus:border-white">
+            <option>$100 - $300</option>
+            <option>$300 - $700</option>
+            <option>$700 - $1500</option>
+            <option>$1500+</option>
+          </select>
+        </div>
+
+        <!-- Preferred Date -->
+        <div>
+          <label class="block mb-2 text-sm">Preferred Date</label>
+          <input type="date" name="date"
+            class="w-full p-3 rounded-lg bg-black border border-gray-700 focus:outline-none focus:border-white">
+        </div>
+
+        <!-- Project Details -->
+        <div>
+          <label class="block mb-2 text-sm">Project Details</label>
+          <textarea name="message" rows="4"
+            class="w-full p-3 rounded-lg bg-black border border-gray-700 focus:outline-none focus:border-white"></textarea>
+        </div>
+
+        <!-- Submit -->
+        <div class="text-center">
+          <button type="submit"
+            class="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-300 transition">
+            Submit Booking
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black py-10 text-center text-gray-500 text-sm">
+    <p>© 2026 TopHills Music Hub. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
