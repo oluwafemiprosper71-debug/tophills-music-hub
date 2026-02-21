@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Complete Your Booking | TopHills</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-white flex items-center justify-center min-h-screen">
+
+  <div class="text-center bg-gray-900 p-12 rounded-2xl shadow-xl max-w-lg">
+
+    <h1 class="text-3xl font-bold mb-4">
+      Booking Request Received 🎵
+    </h1>
+
+    <p class="text-gray-400 mb-8">
+      Your session request has been recorded.  
+      To officially confirm your booking, please complete the required deposit payment below.
+    </p>
+
+    <a href="YOUR_FLUTTERWAVE_LINK"
+       class="bg-green-500 text-black px-8 py-4 rounded-full font-semibold hover:bg-green-400 transition">
+       Pay $100 Deposit to Confirm
+    </a>
+
+    <p class="text-gray-500 text-sm mt-6">
+      Bookings are only confirmed after deposit payment.
+    </p>
+
+  </div>
+
+</body>
+</html>
