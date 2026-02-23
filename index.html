@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <title>TopHills</title><head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TopHills Music Hub</title>
@@ -12,7 +14,7 @@
   <!-- NAVBAR -->
   <header class="bg-black/80 backdrop-blur-md fixed w-full z-50">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">TopHills</h1>
+      <h1 class="text-4xl font-bold" data-aos="fade-up">TopHills</h1>
       <nav class="hidden md:flex space-x-6 text-sm">
         <a href="store.html">Store</a>
 <a href="beats.html">Beats</a>
@@ -89,5 +91,11 @@
     <p>© 2026 TopHills Music Hub. All rights reserved.</p>
   </footer>
 
-</body>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script></body>
 </html>
